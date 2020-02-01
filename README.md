@@ -50,4 +50,3 @@
 | 🕗开发中 | lerso.cn | [http://lerso.cn/](http://lerso.cn/) |
 | 🕗开发中 | dh.wdj.pw | [WebStack\.cc \- 设计师网址导航](https://dh.wdj.pw/cn/index.html) |
 | 🕗开发中 | wukandy.cn | [https://wukandy.cn/](https://wukandy.cn/) |
-## License
