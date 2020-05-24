@@ -205,7 +205,21 @@
 sudo apt -y install build-essential cmake libboost-system-dev libboost-program-options-dev libssl-dev default-libmysqlclient-dev</p>
 
 <p>curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_mult.sh && chmod +x trojan_mult.sh && ./trojan_mult.sh</p>
- <p></p>
+
+<p>使用配置文件配置trojan多用户方法</p>
+    
+<p>1、找到trojan的服务端配置文件server.conf，位置在/usr/src/trojan/server.conf</p>
+
+<p>2、修改server.conf，在password数组中添加多个值，如下图所示，一定要加引号，多个密码间注意使用英文逗号隔开，最后一个密码后无需加逗号</p>
+
+<p>添加完成，保存文件，然后重启trojan或VPS</p>
+
+<p>重启trojan：systemctl restart trojan</p>
+
+<p>重启VPS：reboot</p>
+    
+
+<p></p>
 <p>下载地址：</p>
 
 <p><a href="https://github.com/trojan-gfw/trojan/releases">https://github.com/trojan-gfw/trojan/releases</a></p>
