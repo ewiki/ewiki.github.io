@@ -1,26 +1,228 @@
-Trojan-GFW on a Linux Client
+<!DOCTYPE html>
+<html lang="zh">
 
-下载地址：
+<head>
+    <meta charset="utf-8">
+    <title>webstack - 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77253689-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-https://github.com/trojan-gfw/trojan/releases
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-解压，编辑config.json
+    gtag('config', 'UA-77253689-1');
+    </script>
+    <style>
+    html,
+    body {
+        width: 100%;
+        height: 100%
+    }
+    
+    a,
+    a img,
+    a:before,
+    a:after {
+        text-decoration: none;
+        transition-duration: .25s
+    }
+    
+    section {
+        display: block
+    }
+    
+    body {
+        line-height: 1
+    }
+    
+    #about {
+        width: 40%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: 20;
+        transform: translate(0, -50%);
+    }
+    
+    #about h1 {
+        margin: 30px;
+    }
+    
+    #about p {
+        margin: 30px;
+    }
+    
+    #about img {
+        margin-left: 30px;
+    }
+    
+    #about .social {
+        float: left;
+        margin: 30px;
+    }
+    
+    #about .copyright {
+        width: 100%;
+        float: left;
+        margin-bottom: 0px;
+    }
+    
+    @media (max-width: 768px) {
+        #about {
+            width: 100%;
+            left: 0px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        #about h1 {
+            margin: 30px;
+        }
+        #about p {
+            margin: 30px;
+        }
+        #about .social {
+            margin: 30px;
+        }
+        #about .copyright {
+            width: 100%;
+            float: left;
+            margin-bottom: 0px;
+        }
+    }
+    
+    @media (max-width: 580px) {
+        #about {
+            width: 100%;
+            left: 0px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        #about h1 {
+            margin: 30px;
+        }
+        #about p {
+            margin: 30px;
+            margin-bottom: 0px
+        }
+        #about .social {
+            margin: 30px;
+            margin-bottom: 0px
+        }
+        #about .copyright {
+            width: 100%;
+            float: left;
+            margin-bottom: 0px;
+        }
+    }
+    
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both
+    }
+    
+    .bounce-in {
+        animation-name: bounce-in
+    }
+    
+    @keyframes bounce-in {
+        from,
+        60%,
+        75%,
+        90%,
+        to {
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+        }
+        0% {
+            opacity: 0;
+            transform: translate3d(-3000px, -50%, 0)
+        }
+        60% {
+            opacity: 1;
+            transform: translate3d(25px, -50%, 0)
+        }
+        75% {
+            transform: translate3d(-10px, -50%, 0)
+        }
+        90% {
+            transform: translate3d(5px, -50%, 0)
+        }
+        to {
+            transform: translate3d(0, -50%)
+        }
+    }
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: rgba(0, 0, 0, 0.65)
+    }
+    
+    h1 {
+        font-family: "Merriweather", sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.25;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 25px
+    }
+    
+    a {
+        color: rgba(3, 3, 3, 0.85);
+        font-weight: 600;
+    }
+    
+    @media (max-width: 580px) {
+        body {
+            font-size: 14px
+        }
+        h1 {
+            font-size: 42px;
+            line-height: 1.45
+        }
+    }
+    
+    .bg-align {
+        margin-top: 50%;
+    }
+    </style>
+</head>
+  
+<body>
+<h1>Trojan-GFW on a Linux Client</h1>
 
-1.网址：Replace remote address example.com by your actual server name, e.g. nyc.trjn.tk
-2.端口：Replace remote port 443 if necessary
-3.密码：Replace password1 by your actual password e.g. MLQR4OVq
-4.SSL: On Linux, you need to set SSL verify to false
+<p>下载地址：</p>
 
-Firefox（仅需Firefox上网）
-1.From the hamburger menu select Options.
-2.Under Network Settings, select Settings.
-3.Choose Manual proxy configuration.
-4.SOCKS Host 127.0.0.1.
-5.Port 1080.
-6.Select version SOCKS v5.
-7.CheckProxy DNS when using SOCKS v5.
-8.Click OK.
+<p>https://github.com/trojan-gfw/trojan/releases</p>
 
-全局上网
-网络---网络设定---Network proxy---手动
-Sokket： 127.0.0.1 端口1080
+<p>解压，编辑config.json</p>
+
+<p>1.网址：Replace remote address example.com by your actual server name, e.g. nyc.trjn.tk</p>
+<p>2.端口：Replace remote port 443 if necessary</p>
+<p>3.密码：Replace password1 by your actual password e.g. MLQR4OVq</p>
+<p>4.SSL: On Linux, you need to set SSL verify to false</p>
+
+<p>Firefox（仅需Firefox上网）</p>
+<p>1.From the hamburger menu select Options.</p>
+<p>2.Under Network Settings, select Settings.</p>
+<p>3.Choose Manual proxy configuration.</p>
+<p>4.SOCKS Host 127.0.0.1.</p>
+<p>5.Port 1080.</p>
+<p>6.Select version SOCKS v5.</p>
+<p>7.CheckProxy DNS when using SOCKS v5.</p>
+<p>8.Click OK.</p>
+
+<p>全局上网</p>
+<p>网络---网络设定---Network proxy---手动</p>
+<p>Sokket： 127.0.0.1 端口1080</p>
+  
+</body>
+
+</html>
