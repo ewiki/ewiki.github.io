@@ -1,0 +1,26 @@
+Trojan-GFW on a Linux Client
+
+下载地址：
+
+https://github.com/trojan-gfw/trojan/releases
+
+解压，编辑config.json
+
+1.网址：Replace remote address example.com by your actual server name, e.g. nyc.trjn.tk
+2.端口：Replace remote port 443 if necessary
+3.密码：Replace password1 by your actual password e.g. MLQR4OVq
+4.SSL: On Linux, you need to set SSL verify to false
+
+Firefox（仅需Firefox上网）
+1.From the hamburger menu select Options.
+2.Under Network Settings, select Settings.
+3.Choose Manual proxy configuration.
+4.SOCKS Host 127.0.0.1.
+5.Port 1080.
+6.Select version SOCKS v5.
+7.CheckProxy DNS when using SOCKS v5.
+8.Click OK.
+
+全局上网
+网络---网络设定---Network proxy---手动
+Sokket： 127.0.0.1 端口1080
