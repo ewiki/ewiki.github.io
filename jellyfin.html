@@ -196,7 +196,7 @@
   
 <body>
 <h1>Jellyfin安装及配置</h1>
-<p>sudo apt install apt-transport-https<p>
+<p>sudo apt install apt-transport-https gnupg2<p>
 <p>wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -</p>
 <p>echo "deb [arch=$( dpkg --print-architecture )] https://repo.jellyfin.org/$( awk -F'=' '/^ID=/{ print $NF }' /etc/os-release ) $( awk -F'=' '/^VERSION_CODENAME=/{ print $NF }' /etc/os-release ) main" | sudo tee /etc/apt/sources.list.d/jellyfin.list</p>
 <p>sudo apt update</p>
