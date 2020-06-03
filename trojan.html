@@ -224,12 +224,13 @@ sudo apt -y install build-essential cmake libboost-system-dev libboost-program-o
 
 <p><a href="https://github.com/trojan-gfw/trojan/releases">https://github.com/trojan-gfw/trojan/releases</a></p>
 
-<p>解压，编辑config.json</p>
+<p>解压，cp examples/client.json-example config.json, 编辑config.json</p>
 
 <p>1.网址：Replace remote address example.com by your actual server name, e.g. nyc.trjn.tk</p>
 <p>2.端口：Replace remote port 443 if necessary</p>
 <p>3.密码：Replace password1 by your actual password e.g. MLQR4OVq</p>
 <p style="color:#FF0000";>4.SSL: On Linux, you need to set SSL verify to false</p>
+<p>5.可选：./trojan -c config.json（要给予执行权限）</p>
 
 <p>Firefox（仅需Firefox上网）</p>
 <p>1.From the hamburger menu select Options.</p>
